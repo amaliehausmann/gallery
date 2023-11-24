@@ -6,7 +6,7 @@ function createGallery() {
     myImages.forEach(function(url) {
         const image = document.createElement('img');
         const article = document.createElement('article');
-        const imageUrl = '/assets/images/' + url;
+        const imageUrl = 'assets/images/' + url;
         image.src = imageUrl;
 
         image.addEventListener('click', function() {
