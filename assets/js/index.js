@@ -6,7 +6,7 @@ function createGallery() {
     myImages.forEach(function(url) {
         const image = document.createElement('img');
         const article = document.createElement('article');
-        const imageUrl = '/assets/images/' + url;
+        const imageUrl = 'gallery/assets/images/' + url;
         image.src = imageUrl;
 
         image.addEventListener('click', function() {
@@ -17,12 +17,12 @@ function createGallery() {
         article.appendChild(image);
         myGallery.appendChild(article);
     });
-}
+};
 
 function singleImageDisplay(url) {
     const singleImageSection = document.getElementById('singleImage');
     const displayedImage = document.getElementById('displayedImage');
-    const displayedUrl = '/assets/images/' + url;
+    const displayedUrl = 'gallery/assets/images/' + url;
 
     displayedImage.src = displayedUrl;
     singleImageSection.style.display = 'flex';
@@ -32,6 +32,6 @@ function singleImageDisplay(url) {
         myGallery.style.display = 'grid'
     });
 
-}
+};
 
 createGallery();
